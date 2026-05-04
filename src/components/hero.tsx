@@ -91,7 +91,7 @@ export function Hero() {
               </span>
             </MagneticLink>
             <MagneticLink
-              href="mailto:admin@prepopos.com"
+              href="mailto:pauallendeherraiz@gmail.com"
               cursor="copiar"
               cursorVariant="link"
             >
@@ -137,7 +137,7 @@ export function Hero() {
             text="LinkedIn"
           />
           <SocialIcon
-            href="mailto:admin@prepopos.com"
+            href="mailto:pauallendeherraiz@gmail.com"
             label="Email"
             icon={<Envelope weight="regular" className="size-4" />}
             text="Email"

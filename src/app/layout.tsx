@@ -59,7 +59,7 @@ const personJsonLd = {
   "@type": "Person",
   name: "Pau Allende Herraiz",
   url: SITE_URL,
-  email: "mailto:admin@prepopos.com",
+  email: "mailto:pauallendeherraiz@gmail.com",
   jobTitle: "Full-stack Software Engineer",
   sameAs: [
     "https://www.linkedin.com/in/pau-allende/",

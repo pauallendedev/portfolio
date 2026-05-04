@@ -4,7 +4,7 @@ import { useState } from "react";
 import { ArrowUpRight, GithubLogo, LinkedinLogo, Copy, Check } from "@phosphor-icons/react/dist/ssr";
 import { Reveal } from "./reveal";
 
-const EMAIL = "admin@prepopos.com";
+const EMAIL = "pauallendeherraiz@gmail.com";
 
 export function Footer() {
   const [copied, setCopied] = useState(false);
