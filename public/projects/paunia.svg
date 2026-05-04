@@ -172,7 +172,7 @@
         <rect x="0" y="0" width="304" height="62" rx="12" fill="#ffffff" stroke="#e9e7ea"/>
         <rect x="14" y="14" width="3" height="34" rx="1.5" fill="#E76851"/>
         <text x="28" y="30" font-family="Inter" font-size="13" font-weight="600" fill="#171618">Sopar al Cañete</text>
-        <text x="28" y="48" font-family="Inter" font-size="11" fill="#8a888c">21:00 · Pau & Mireia</text>
+        <text x="28" y="48" font-family="Inter" font-size="11" fill="#8a888c">21:00 · Pau &amp; Mireia</text>
         <g transform="translate(232, 18)">
           <rect width="58" height="22" rx="11" fill="#fde6df"/>
           <text x="29" y="15" text-anchor="middle" font-family="Inter" font-size="10" font-weight="700" fill="#E76851">800 ✦</text>
