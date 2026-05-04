@@ -112,7 +112,7 @@ export const PROJECTS: Project[] = [
       },
     ],
     image: "/projects/paunia.svg",
-    imageAlt: "Mockup de la app Pàunia",
-    accent: "#FF6B9D",
+    imageAlt: "Mockup de la app Pàunia mostrant el dashboard i la botiga",
+    accent: "#E76851",
   },
 ];
