@@ -172,7 +172,7 @@
         <rect x="0" y="0" width="304" height="62" rx="12" fill="#ffffff" stroke="#e9e7ea"/>
         <rect x="14" y="14" width="3" height="34" rx="1.5" fill="#E76851"/>
         <text x="28" y="30" font-family="Inter" font-size="13" font-weight="600" fill="#171618">Sopar al Cañete</text>
-        <text x="28" y="48" font-family="Inter" font-size="11" fill="#8a888c">21:00 · Pau &amp; Mireia</text>
+        <text x="28" y="48" font-family="Inter" font-size="11" fill="#8a888c">21:00 · Pau &amp; Xènia</text>
         <g transform="translate(232, 18)">
           <rect width="58" height="22" rx="11" fill="#fde6df"/>
           <text x="29" y="15" text-anchor="middle" font-family="Inter" font-size="10" font-weight="700" fill="#E76851">800 ✦</text>
@@ -183,7 +183,7 @@
         <rect x="0" y="0" width="304" height="62" rx="12" fill="#ffffff" stroke="#e9e7ea"/>
         <rect x="14" y="14" width="3" height="34" rx="1.5" fill="#5dade2"/>
         <text x="28" y="30" font-family="Inter" font-size="13" font-weight="600" fill="#171618">Cita metge · CAP</text>
-        <text x="28" y="48" font-family="Inter" font-size="11" fill="#8a888c">11:00 · Mireia</text>
+        <text x="28" y="48" font-family="Inter" font-size="11" fill="#8a888c">11:00 · Xènia</text>
       </g>
 
       <g transform="translate(0, 172)">
@@ -317,7 +317,7 @@
     <g transform="translate(40, 624)">
       <text x="0" y="14" font-family="ui-monospace" font-size="10" letter-spacing="0.2em" fill="#8a888c" font-weight="600">PROPOSTA DE PARELLA</text>
       <rect x="0" y="22" width="304" height="58" rx="12" fill="#fde6df" stroke="#f3c8ba"/>
-      <text x="16" y="44" font-family="Inter" font-size="12" font-weight="600" fill="#171618">Mireia diu que ha completat: Gym</text>
+      <text x="16" y="44" font-family="Inter" font-size="12" font-weight="600" fill="#171618">Xènia diu que ha completat: Gym</text>
       <text x="16" y="62" font-family="Inter" font-size="11" fill="#8a4a3a">Proposa guanyar 30 ✦</text>
       <g transform="translate(232, 36)">
         <rect width="58" height="30" rx="15" fill="#171618"/>
