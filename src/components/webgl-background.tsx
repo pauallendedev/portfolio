@@ -102,28 +102,47 @@ export function WebGLBackground() {
 
     if (reduceMotion) return;
 
+    // Probe for WebGL support before letting ogl throw.
+    const probe = document.createElement("canvas");
+    const probeCtx =
+      probe.getContext("webgl2") ||
+      probe.getContext("webgl") ||
+      probe.getContext("experimental-webgl");
+    if (!probeCtx) return;
+
     const dpr = Math.min(window.devicePixelRatio || 1, 1.5);
-    const renderer = new Renderer({ alpha: true, dpr });
+
+    let renderer: Renderer;
+    let program: Program;
+    let mesh: Mesh;
+    try {
+      renderer = new Renderer({ alpha: true, dpr });
+      const localGl = renderer.gl;
+      if (!localGl) throw new Error("WebGL context not available");
+      localGl.clearColor(0.039, 0.039, 0.043, 1);
+
+      container.appendChild(localGl.canvas);
+      localGl.canvas.style.position = "absolute";
+      localGl.canvas.style.inset = "0";
+      localGl.canvas.style.width = "100%";
+      localGl.canvas.style.height = "100%";
+
+      const geometry = new Triangle(localGl);
+      program = new Program(localGl, {
+        vertex: VERT,
+        fragment: FRAG,
+        uniforms: {
+          uTime: { value: 0 },
+          uRes: { value: [container.offsetWidth, container.offsetHeight] },
+          uMouse: { value: [container.offsetWidth / 2, container.offsetHeight / 2] },
+        },
+      });
+      mesh = new Mesh(localGl, { geometry, program });
+    } catch (err) {
+      if (typeof console !== "undefined") console.warn("WebGL background unavailable:", err);
+      return;
+    }
     const gl = renderer.gl;
-    gl.clearColor(0.039, 0.039, 0.043, 1);
-
-    container.appendChild(gl.canvas);
-    gl.canvas.style.position = "absolute";
-    gl.canvas.style.inset = "0";
-    gl.canvas.style.width = "100%";
-    gl.canvas.style.height = "100%";
-
-    const geometry = new Triangle(gl);
-    const program = new Program(gl, {
-      vertex: VERT,
-      fragment: FRAG,
-      uniforms: {
-        uTime: { value: 0 },
-        uRes: { value: [container.offsetWidth, container.offsetHeight] },
-        uMouse: { value: [container.offsetWidth / 2, container.offsetHeight / 2] },
-      },
-    });
-    const mesh = new Mesh(gl, { geometry, program });
 
     const resize = () => {
       const w = container.offsetWidth;
