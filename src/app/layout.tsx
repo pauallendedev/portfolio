@@ -6,7 +6,7 @@ import { SmoothScroll } from "@/components/smooth-scroll";
 import { CustomCursor } from "@/components/custom-cursor";
 import { WebGLBackground } from "@/components/webgl-background";
 
-const SITE_URL = "https://pauallende.com";
+const SITE_URL = "https://portfolio-pau-eight.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
